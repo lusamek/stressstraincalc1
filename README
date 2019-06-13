@@ -1,0 +1,35 @@
+
+
+***********************************************************
+**                                                       ** 
+**  C Code to model the true stress-strain curve         **
+**                                                       ** 
+**  Author: L.Samek, 2016                                ** 
+**                                                       ** 
+***********************************************************
+
+The code is a simple demonstration for education purposes, to show the strengthening mechanims based on glide.
+
+It can be used for a fully bainitic steel or a ferritic steel.
+To make a steel with two constituents, e.g. bainite and ferrite, just add the mixture law.
+
+
+
+TO COMPILE:
+   -On linux:
+	  gcc -lm glide.c -o glide.bin; ./glide.bin  ; pdflatex graph.tex ; mupdf graph.pdf 
+   -On Win32
+	  It shall be similar.
+
+
+LIBS AND REQUIREMENTS:
+   {GCC, Math lib,
+    PDFLATEX (optional)}
+
+   - It has a relatively minimal lib requirement.
+   - It needs GCC and math.h (math lib)
+   - It can run on any platforms, since the plot of the flow curve is made by using PDFLATEX
+
+
+
+
